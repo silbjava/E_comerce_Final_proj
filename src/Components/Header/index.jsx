@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
     return (
         <>
@@ -10,23 +12,23 @@ export function Header() {
 
                 <div className="flex ml-16 gap-5 mt-[47px]">
                     <button className="w-[97px] h-[19px] mt-[11px] items-center text-white font-inter text-base font-semibol">
-                        Cadastre-se
+                        <Link to="/cadastro">Cadastre-se</Link>
                     </button>
                     <button className="w-32 h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter text-base font-semibold  items-center">
                         Entrar
                     </button>
                     <button className="w-6 h-6 pt-[7px] ">
-                        <img id="carrinho"  src="src\assets\Carrinho.svg" alt="icone carrinho de compras" />
+                        <img id="carrinho" src="src\assets\Carrinho.svg" alt="icone carrinho de compras" />
                     </button>
                 </div>
 
             </div>
             <div className="flex h-[41px] pt-[15px] text-zinc-50 font-inter text-base font-semibold bg-blue-900 w-screen">
                 <nav className="flex ml-[36.11vw] h-[19px] gap-10">
-                    <a>Home</a>
-                    <a>Produtos</a>
-                    <a>Categorias</a>
-                    <a>Meus Pedidos</a>
+                    <a><Link to="/">Home</Link></a>
+                    <a><Link to="/produtos">Produtos</Link></a>
+                    <a><Link to="/categorias">Categorias</Link></a>
+                    <a><Link to="/meuspedidos">Meus Pedidos</Link></a>
                 </nav>
             </div>
         </>

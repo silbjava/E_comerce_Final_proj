@@ -3,29 +3,30 @@ import { Header } from "./Components/Header"
 import { Cards } from "./Components/Cards"
 import { Footer } from "./Components/Footer"
 import Cadastro from "./Pages/Cadastro"
-import Login from "./Pages/Login"
+import Categorias from "./Pages/Categorias"
 import TelaHome from "./Pages/TelaHome"
-import MeuPedidos from "./Pages/MeusPedidos"
-import page404 from "./Pages/404"
-
-
+import MeusPedidos from "./Pages/MeusPedidos"
+import Login from "./Pages/Login"
+import Page404 from "./Pages/404"
 
 function App() {
 
   return (
     <>
-      <Header />
       <BrowserRouter>
+      <Header />
         <Routes>
-          <Route path="cadastro" element={<Cadastro />} />
-          <Route path="login" element={<Login />} />
           <Route path="/" element={<TelaHome />} />
-          <Route path="requests" element={<MeuPedidos />} />
-          <Route path="*" element={<page404 />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/categorias" element={<Categorias />} />
+          <Route path="/meuspedidos" element={<MeusPedidos />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
-      </BrowserRouter>
-      <Cards />
+        <Cards />
       <Footer />
+      </BrowserRouter>
+      
     </>
   )
 }
