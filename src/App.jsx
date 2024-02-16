@@ -1,6 +1,5 @@
 import { Route, Routes, Link, BrowserRouter } from "react-router-dom"
 import { Header } from "./Components/Header"
-import { Cards } from "./Components/Cards"
 import { Footer } from "./Components/Footer"
 import Cadastro from "./Pages/Cadastro"
 import Categorias from "./Pages/Categorias"
@@ -23,7 +22,6 @@ function App() {
           <Route path="/meuspedidos" element={<MeusPedidos />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
-        <Cards />
       <Footer />
       </BrowserRouter>
       

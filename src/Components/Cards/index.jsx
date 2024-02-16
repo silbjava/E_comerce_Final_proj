@@ -1,7 +1,7 @@
 export function Cards() {
     return (
         <>
-            <section className="flex-col ml-[92px] mt-[34px] w-[86.8vw] h-[613px] bg-white">
+            <section className="flex-col ml-[92px] mt-[34px] w-[86.8vw] bg-white">
                 <label className="w-[104px] h-[24px] text-blue-900 font-inter font-semibold leading-24.2 text-xl">Destaques</label>
                 <div className="flex mt-[26px] flex-wrap gap-10">
                     <div id="Card produto" className="flex-col w-[176px] h-[257px] shadow-card">
