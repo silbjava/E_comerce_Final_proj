@@ -1,6 +1,10 @@
+import { Footer } from "../../Components/Footer";
+import { Header } from "../../Components/Header";
+
 export default function MeusPedidos() {
     return (
         <>
+        <Header/>
             <div className="flex mt-[82px] gap-[31px]">
                 <section className=" bg-slate-100 flex flex-col w-[251px] h-[134px] ml-[82px] mt-[82px] pl-[26px] pt-8 gap-4 rounded-lg">
                     <button className="w-[109px] h-[19px] items-center text-orange-500 font-inter font-semibold leading-19.36 text-px16">Meus pedidos</button>
@@ -38,6 +42,7 @@ export default function MeusPedidos() {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </>
     )
 }

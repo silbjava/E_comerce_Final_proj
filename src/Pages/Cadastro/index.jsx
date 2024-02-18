@@ -14,8 +14,8 @@ export default function Cadastro() {
 
     return (
         <>
-            <section className="flex w-screen h-screen bg-blue-900">
-                <div className=" w-1/2 h-full bg-slate-100 ">
+            <section className="flex w-screen h-[1024px] bg-blue-900 items-center">
+                <div className=" w-1/2 h-[1024px] bg-slate-100 items-center">
                     <div className="w-[450px] h-[503px] pt-8 pl-[75px] ml-[9.376vw] mt-[261px] bg-white">
                         <h1 className=" font-inter font-semibold text-px30 leading-36.3 text-black mb-[34px]">Cadastre-se</h1>
                         <form onSubmit={aoCadastrar}>
@@ -43,7 +43,7 @@ export default function Cadastro() {
                             <button type="submit" className="w-[300px] h-[60px] rounded-lg bg-orange-500  flex pl-[111px] pt-5  mt-6 font-inter font-semibold text-px16 leading-19.36 text-white"> Cadastrar</button>
                             <div className="flex pl-[25px] font-inter text-px16 leading-19.36 gap-1">
                                 <p className="text-stone-900">já possui cadastro? </p>
-                                <button className="text-orange-500">Clique aqui</button>
+                                <button  className="text-orange-500">Clique aqui</button>
                             </div>
                         </form>
                     </div>
@@ -60,7 +60,6 @@ export default function Cadastro() {
                 </div>
 
             </section>
-
         </>
     )
 }

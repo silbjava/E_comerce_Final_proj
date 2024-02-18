@@ -1,4 +1,4 @@
-import { Route, Routes, Link, BrowserRouter } from "react-router-dom"
+import { Route, Routes, BrowserRouter } from "react-router-dom"
 import { Header } from "./Components/Header"
 import { Cards } from "./Components/Cards"
 import { Footer } from "./Components/Footer"
@@ -14,19 +14,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Header />
-        <Routes>
-          <Route path="/" element={<TelaHome />} />
-          <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/categorias" element={<Categorias />} />
-          <Route path="/meuspedidos" element={<MeusPedidos />} />
-          <Route path="*" element={<Page404 />} />
-        </Routes>
-        <Cards />
-      <Footer />
+          <Routes>
+            <Route path="/" element={<TelaHome />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/cadastro" element={<Cadastro/>}/>
+            <Route path="/categorias" element={<Categorias />} />
+            <Route path="/meuspedidos" element={<MeusPedidos />} />
+            <Route path="*" element={<Page404 />} />
+          </Routes>
       </BrowserRouter>
-      
+
     </>
   )
 }
