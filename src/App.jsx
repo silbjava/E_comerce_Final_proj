@@ -1,7 +1,4 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom"
-import { Header } from "./Components/Header"
-import { Cards } from "./Components/Cards"
-import { Footer } from "./Components/Footer"
 import Cadastro from "./Pages/Cadastro"
 import Categorias from "./Pages/Categorias"
 import TelaHome from "./Pages/TelaHome"
