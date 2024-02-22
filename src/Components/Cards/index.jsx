@@ -1,8 +1,8 @@
 export function Cards() {
     return (
         <>
-            <section className="max-[321px]:hidden flex-col ml-[92px] mt-[34px] w-[86.8vw] h-auto bg-white">
-                <label className="w-[104px] h-[24px] text-blue-900 font-inter font-semibold leading-24.2 text-xl">Destaques</label>
+            <section className=" hidden md:flex flex-col ml-[92px] w-auto h-auto">
+                <label className="w-[104px] h-[24px] mt-[34px] text-blue-900 font-inter font-semibold leading-24.2 text-xl">Destaques</label>
                 <div className="flex mt-[26px] flex-wrap gap-10">
                     <div id="Card produto" className="flex-col w-[176px] h-[257px] shadow-card">
                         <img className="w-[176px] h-[134px]  rounded" src="src\assets\NiqueAirSurf.png" alt="Card do tênis Niquel Air surf" />
@@ -90,9 +90,9 @@ export function Cards() {
                     </div>
                 </div>
             </section>
-            <section className="sl:hidden flex-col w-screen h-[348px] pt-[26px] pl-3 bg-white">
-                <label className="w-[104px] h-[24px] ml-[22px] text-blue-900 font-inter font-semibold leading-24.2 text-xl">Destaques</label>
-                <div className="flex mt-[19px] gap-2 justify-center">
+            <section className="sl:hidden flex-col w-screen pt-[26px] pl-3 pb-[71px]">
+                <label className="w-[104px] h-[24px] ml-[22px] mt-[34px] text-blue-900 font-inter font-semibold leading-24.2 text-xl">Destaques</label>
+                <div className="flex mt-[19px]  gap-2">
                     <div id="Card produto" className="flex-col w-[176px] h-[257px] shadow-card">
                         <img className=" w-36 h-24  rounded" src="src\assets\NiqueAirSurf.png" alt="Card do tênis Niquel Air surf" />
                         <p className="w-[124px] h-6 mt-[14px] text-blue-900 font-inter font-bold text-px18 leading-21.7">Nique Air Surf</p>

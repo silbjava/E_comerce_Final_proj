@@ -9,12 +9,12 @@ export default function Cadastro() {
     }
     const aoLogar = (e) => {
         e.preventDefault()
-        console.log(loginState)
+        
     }
     return (
         <>
-            <section className="flex w-screen h-screen bg-blue-900">
-                <div className=" w-1/2 h-full bg-slate-100 items-center">
+            <section className="hidden sl:flex w-auto h-auto">
+                <div className=" w-1/2 h-auto bg-slate-100 items-center">
                     <div className="w-[450px] h-[503px] pt-8 pl-[75px] ml-[9.375vw] mt-[261px] bg-white">
                         <h1 className=" font-inter font-semibold text-px30 leading-36.3 text-black mb-[34px]">Fazer Login</h1>
                         <form onSubmit={aoLogar}>
@@ -41,7 +41,7 @@ export default function Cadastro() {
                     </div>
 
                 </div>
-                <div className="flex flex-col w-1/2 h-screen pl-[12.917vw] pt-[384px]">
+                <div className="flex flex-col w-1/2 h-auto pl-[12.917vw] pt-[384px] bg-blue-900">
                     <p className="w-[389px] h-[78px] text-white font-inter text-px32 leading-38.7">
                         Sua nova experiência em
                         compras online
@@ -50,9 +50,34 @@ export default function Cadastro() {
                         <img src="src\assets\Logo_cadastro.png" alt="Logo irede na tela cadastro" />
                     </div>
                 </div>
-
             </section>
-
+            <section className="sl:hidden flex flex-col px-2 pb-[107px] w-screen h-auto bg-blue-900 items-center">
+            <img id="logo" className="w-[71.56px] h-7 mt-[33px]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
+                <div className="flex flex-col w-[304px]  mt-7 pt-[14px] pb-10 bg-white items-center">
+                    <h1 className="font-inter font-semibold text-px24 leading-normal text-black">Fazer Login</h1>
+                    <form className="flex flex-col items-center" onSubmit={aoLogar}>
+                        <div className="flex flex-col w-[260px] h-[70px] rounded-lg mb-5 gap-2">
+                            <label className=" font-inter font-semibold text-px16 leading-19.36" >Email:*</label>
+                            <input className="h-[43px] font-inter font-medium text-px16 text-stone-500 leading-19.36 pl-3 items-center bg-slate-100 rounded-lg " type="email" placeholder="Digite seu e-mail" required
+                                value={loginState.email}
+                                onChange={(e) => loginOnChange(e, 'email')}
+                            />
+                        </div>
+                        <div className="flex flex-col w-[260px] h-[70px] rounded-lg mb-5 gap-2">
+                            <label className=" font-inter font-semibold text-px16 leading-19.36" >Senha*</label>
+                            <input className="h-[43px] font-inter font-medium text-px16 text-stone-500 leading-19.36 pl-3 items-center bg-slate-100 rounded-lg " type="password" placeholder="Digite sua senha" required
+                                value={loginState.password}
+                                onChange={(e) => loginOnChange(e, 'password')}
+                            />
+                        </div>
+                        <button type="submit" className=" w-[260px] h-[60px] items-center justify-items-center rounded-lg bg-orange-500 font-inter font-semibold text-px16 leading-19.36 text-white">Fazer Login</button>
+                        <div className="flex font-inter text-px16 leading-19.36 gap-1 ">
+                            <p className="text-stone-900">já possui cadastro? </p>
+                            <button className="text-orange-500">Clique aqui</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </>
     )
 }
