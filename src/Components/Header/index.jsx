@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
 export function Header() {
+   
     return (
         <>
-            <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-auto">
+
+            <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-screen">
                 <div className="flex">
                     <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] mr-[18.83vw]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
                     <div className="relative items-center mt-[45px] mr-[4.44vw]">
@@ -12,10 +14,10 @@ export function Header() {
                     </div>
 
                     <div className=" flex gap-5 mt-[47px]">
-                        <button className="w-[97px] h-[19px] mt-[11px] items-center text-white font-inter text-base font-semibol">
+                        <button className="w-[7vw] h-[19px] mt-[11px] items-center text-white font-inter text-base font-semibol">
                             <Link to="/cadastro">Cadastre-se</Link>
                         </button>
-                        <button className="w-32 h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter text-base font-semibold  items-center" >
+                        <button className="w-[9vw] h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter text-base font-semibold  items-center" >
                             <Link to="/login">Entrar</Link>
                         </button>
                         <button className="w-6 h-6 pt-[7px]">
@@ -23,11 +25,11 @@ export function Header() {
                         </button>
                     </div>
                 </div>
-                <nav className=" flex w-screen justify-center gap-10 mt-[59px] text-zinc-50 font-inter text-base font-semibold">
-                    <a><Link to="/">Home</Link></a>
-                    <a><Link to="/produtos">Produtos</Link></a>
-                    <a><Link to="/categorias">Categorias</Link></a>
-                    <a><Link to="/meuspedidos">Meus Pedidos</Link></a>
+                <nav className=" flex w-screen justify-center gap-10 mt-[59px]  font-inter text-base font-semibold">
+                    <a className="text-zinc-50"><Link to="/">Home</Link></a>
+                    <a className="text-zinc-50"><Link to="/produtos">Produtos</Link></a>
+                    <a className="text-zinc-50"><Link to="/categorias">Categorias</Link></a>
+                    <a className="text-zinc-50"><Link to="/meuspedidos">Meus Pedidos</Link></a>
                 </nav>
             </div>
             <div className="sl:hidden flex w-screen h-[137px] justify-center bg-blue-900">
