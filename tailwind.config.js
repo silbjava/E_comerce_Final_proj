@@ -35,6 +35,9 @@ export default {
       },
       screens:{
         'sl': '321px'
+      },
+      borderWidth: {
+        default: '1px'
       }
     },
   },

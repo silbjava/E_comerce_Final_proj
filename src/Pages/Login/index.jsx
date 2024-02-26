@@ -51,7 +51,7 @@ export default function Cadastro() {
                     </div>
                 </div>
             </section>
-            <section className="sl:hidden flex flex-col px-2 pb-[107px] w-screen h-auto bg-blue-900 items-center">
+            <section className="sl:hidden flex flex-col px-2 pb-[107px] w-screen bg-blue-900 items-center">
             <img id="logo" className="w-[71.56px] h-7 mt-[33px]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
                 <div className="flex flex-col w-[304px]  mt-7 pt-[14px] pb-10 bg-white items-center">
                     <h1 className="font-inter font-semibold text-px24 leading-normal text-black">Fazer Login</h1>

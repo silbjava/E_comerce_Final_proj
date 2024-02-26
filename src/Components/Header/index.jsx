@@ -3,22 +3,22 @@ import { Link } from "react-router-dom";
 export function Header() {
     return (
         <>
-            <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-screen ">
+            <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-auto">
                 <div className="flex">
                     <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] mr-[18.83vw]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
-                    <div className="relative items-center mt-[45px] mr-[4.44vw] ml-">
-                        <img id="pesquisar" className=" absolute w-6 sh-6 ml-3 mt-2.5 pointer-events-none " src="src\assets\Procurar.svg" alt="icone de pesquisa" />
-                        <input className=" h-11 w-[36.11vw] pl-11 text-stone-500  font-inter" type="serach" placeholder="Buscar" required />
+                    <div className="relative items-center mt-[45px] mr-[4.44vw]">
+                        <img id="pesquisar" className=" absolute w-6 ml-3 mt-2.5 pointer-events-none " src="src\assets\Procurar.svg" alt="icone de pesquisa" />
+                        <input className="h-11 w-[36.11vw] pl-11 text-stone-500 font-inter" type="serach" placeholder="Buscar" required />
                     </div>
 
                     <div className=" flex gap-5 mt-[47px]">
                         <button className="w-[97px] h-[19px] mt-[11px] items-center text-white font-inter text-base font-semibol">
                             <Link to="/cadastro">Cadastre-se</Link>
                         </button>
-                        <button className="w-32 h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter text-base font-semibold  items-center">
-                            Entrar
+                        <button className="w-32 h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter text-base font-semibold  items-center" >
+                            <Link to="/login">Entrar</Link>
                         </button>
-                        <button className="w-6 h-6 pt-[7px] ">
+                        <button className="w-6 h-6 pt-[7px]">
                             <img id="carrinho" src="src\assets\Carrinho.svg" alt="icone carrinho de compras" />
                         </button>
                     </div>
