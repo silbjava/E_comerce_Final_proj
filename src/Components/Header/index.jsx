@@ -1,20 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export function Header() {
-   
+   const navLinkStyle = ({isActive}) =>{
+    return(
+        isActive?'text-orange-500':'text-zinc-50'
+    )
+   }
     return (
         <>
 
             <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-screen">
                 <div className="flex">
-                    <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] mr-[18.83vw]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
-                    <div className="relative items-center mt-[45px] mr-[4.44vw]">
-                        <img id="pesquisar" className=" absolute w-6 ml-3 mt-2.5 pointer-events-none " src="src\assets\Procurar.svg" alt="icone de pesquisa" />
+                    <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] lg:mr-[18.83vw] sm:mr-[15%]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
+                    <div className="flex relative items-center mt-[45px] mr-[4.44vw]">
+                        <img id="pesquisar" className=" absolute w-6 ml-3 pointer-events-none " src="src\assets\Procurar.svg" alt="icone de pesquisa" />
                         <input className="h-11 w-[36.11vw] pl-11 text-stone-500 font-inter" type="serach" placeholder="Buscar" required />
                     </div>
 
                     <div className=" flex gap-5 mt-[47px]">
-                        <button className="w-[7vw] h-[19px] mt-[11px] items-center text-white font-inter text-base font-semibol">
+                        <button className="w-auto h-[19px] mt-[11px] items-center text-white font-inter text-base font-semibol">
                             <Link to="/cadastro">Cadastre-se</Link>
                         </button>
                         <button className="w-[9vw] h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter text-base font-semibold  items-center" >
@@ -26,10 +30,10 @@ export function Header() {
                     </div>
                 </div>
                 <nav className=" flex w-screen justify-center gap-10 mt-[59px]  font-inter text-base font-semibold">
-                    <a className="text-zinc-50"><Link to="/">Home</Link></a>
-                    <a className="text-zinc-50"><Link to="/produtos">Produtos</Link></a>
-                    <a className="text-zinc-50"><Link to="/categorias">Categorias</Link></a>
-                    <a className="text-zinc-50"><Link to="/meuspedidos">Meus Pedidos</Link></a>
+                    <a ><NavLink className={navLinkStyle} to="/">Home</NavLink></a>
+                    <a ><NavLink className={navLinkStyle} to="/produtos">Produtos</NavLink></a>
+                    <a ><NavLink className={navLinkStyle} to="/categorias">Categorias</NavLink></a>
+                    <a ><NavLink className={navLinkStyle} to="/meuspedidos">Meus Pedidos</NavLink></a>
                 </nav>
             </div>
             <div className="sl:hidden flex w-screen h-[137px] justify-center bg-blue-900">
