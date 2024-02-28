@@ -6,6 +6,7 @@ import MeusPedidos from "./Pages/MeusPedidos"
 import Login from "./Pages/Login"
 import Page404 from "./Pages/404"
 import Paginas from "./Components/Paginas"
+import Produtos from "./Pages/Produtos"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/cadastro" element={<Cadastro/>}/>
             <Route path="/categorias" element={<Categorias />} />
             <Route path="/meuspedidos" element={<MeusPedidos />} />
+            <Route path="produtos" element={<Produtos/>}/>
             <Route path="*" element={<Page404 />} />
             <Route path="paginas" element={<Paginas/>}/>
           </Routes>

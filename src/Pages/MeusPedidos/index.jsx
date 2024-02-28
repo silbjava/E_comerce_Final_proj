@@ -38,7 +38,7 @@ export default function MeusPedidos() {
                                 <p className="w-[61px] h-[15px] mt-1.5 text-orange-500 font-inter font-semibold text-px12 leading-14.5">R{'$'} 200,00</p>
                             </div>
                         </div>
-                        <p className="flex mr-12 mt-10 font-inter font-bold text-px16 leading-19.36 text-red-600">Esperando Pagamento</p>
+                        <p className="flex flex-wrap mr-12 mt-10 font-inter font-bold text-px16 leading-19.36 text-red-600">Esperando Pagamento</p>
                     </div>
                 </section>
             </div>

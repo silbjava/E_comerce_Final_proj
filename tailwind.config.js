@@ -38,8 +38,16 @@ export default {
       },
       borderWidth: {
         default: '1px'
-      }
+      },
+
     },
+    listStyleImage: {
+      elipse: 'url("src/assets/Elipse.png")',
+      elipseCol: 'url("src/assets/ElipseCol.png")'
+    },
+    listStyleType:{
+      circle: 'circle',
+    }
   },
   plugins: [],
 }

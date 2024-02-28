@@ -14,7 +14,7 @@ export function Footer() {
                         </div>
                         <p className="w-[182px] h-[60px] ml-[18.7px] font-inter text-px12 leading-14.5 font-normal text-zinc-50">Lorem ipsum lorem ipsum lorem lorem  ipsum lorem loram lorem lorem lorem ipsum ipsum ipsum  </p>
                     </div>
-                    <div id="informações" className="flex flex-col w-auto h-auto ml-[96px] justify-between">
+                    <div id="informações" className="flex flex-col w-auto h-auto ml-[6vw] justify-between">
                         <label className="text-white font-inter font-semibold text-px12 leading-14.5" >Informações</label>
                         <ul className="flex flex-col text-slate-50 font-inter text-px12 leading-14.5 gap-[5px]">
                             <li><a href="Sobre o E-Rede Store">Sobre o E-Rede Store</a></li>
@@ -23,7 +23,7 @@ export function Footer() {
                             <li><a href="Trabalhe Conosco">Trabalhe Conosco</a></li>
                         </ul>
                     </div>
-                    <div id="informações 2" className="flex flex-col w-auto h-auto ml-[60px] justify-between">
+                    <div id="informações 2" className="flex flex-col w-auto h-auto ml-[5vw] justify-between gap-3">
                         <label className="text-white font-inter font-semibold text-px12 leading-14.5">Informações</label>
                         <ul className="flex flex-col text-slate-50 font-inter text-px12 leading-14.5 gap-[5px]">
                             <li><a href="Tênis">Tênis</a></li>
@@ -32,17 +32,16 @@ export function Footer() {
                             <li><a href="Esportivo">Esportivo</a></li>
                         </ul>
                     </div>
-                    <div className=" flex  flex-col w-[174px] h-[59px] ml-[104px] justify-between">
+                    <div className=" flex  flex-col w-[174px] h-[59px] ml-[7vw] justify-between">
                         <label className="text-white font-inter font-semibold text-px12 leading-14.5 ">Localização</label>
-                        <ul className=" text-slate-50 font-inter  text- text-px12 leading-14.5 gap-[5px]">
-                            <li>
-                                <a href="Localização"> Bairro de Fátima, Fortaleza-CE Rua Martinho Rodrigues, 331</a>
-                            </li>
+                        <ul className=" text-slate-50 font-inter text-px12 leading-14.5 gap-[5px]">
+                            <li><a href="Loc1"> Bairro de Fátima, Fortaleza-CE</a></li>
+                            <li><a href="Loc2">Rua Martinho Rodrigues, 331</a></li>
                         </ul>
                     </div>
                 </section>
 
-                <section className=" mt-[115px] flex flex-col items-center">
+                <section className=" mt-[5vw] flex flex-col items-center">
                     <hr className="flex w-[87.22vw] h-px bg-zinc-50" />
                     <p className=" mt-9 font-inter text-slate-100">2023 Irede</p>
                 </section>
