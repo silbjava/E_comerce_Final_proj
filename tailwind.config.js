@@ -47,7 +47,7 @@ export default {
     },
     listStyleType:{
       circle: 'circle',
-    }
+    },
   },
-  plugins: [],
+
 }

@@ -1,7 +1,7 @@
 export function Footer() {
     return (
         <>
-            <div className=" hidden sm:flex flex-col bg-blue-900 w-screen h-auto pb-9 pt-12">
+            <div className=" hidden sm:flex flex-col bg-blue-900 w-screen pb-9 pt-12">
                 <section className="ml-[14.45vw] flex flex-wrap w-auto h-auto">
                     <div className="flex m-0 p-0 w-[292px] h-[76px]" >
                         <div className="flex flex-col justify-between">
@@ -14,7 +14,7 @@ export function Footer() {
                         </div>
                         <p className="w-[182px] h-[60px] ml-[18.7px] font-inter text-px12 leading-14.5 font-normal text-zinc-50">Lorem ipsum lorem ipsum lorem lorem  ipsum lorem loram lorem lorem lorem ipsum ipsum ipsum  </p>
                     </div>
-                    <div id="informações" className="flex flex-col w-auto h-auto ml-[6vw] justify-between">
+                    <div id="informações" className="flex flex-col w-auto ml-[6vw] justify-between">
                         <label className="text-white font-inter font-semibold text-px12 leading-14.5" >Informações</label>
                         <ul className="flex flex-col text-slate-50 font-inter text-px12 leading-14.5 gap-[5px]">
                             <li><a href="Sobre o E-Rede Store">Sobre o E-Rede Store</a></li>
@@ -23,7 +23,7 @@ export function Footer() {
                             <li><a href="Trabalhe Conosco">Trabalhe Conosco</a></li>
                         </ul>
                     </div>
-                    <div id="informações 2" className="flex flex-col w-auto h-auto ml-[5vw] justify-between gap-3">
+                    <div id="informações 2" className="flex flex-col w-auto ml-[5vw] justify-between gap-3">
                         <label className="text-white font-inter font-semibold text-px12 leading-14.5">Informações</label>
                         <ul className="flex flex-col text-slate-50 font-inter text-px12 leading-14.5 gap-[5px]">
                             <li><a href="Tênis">Tênis</a></li>
