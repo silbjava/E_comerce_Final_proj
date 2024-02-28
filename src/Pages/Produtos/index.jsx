@@ -12,16 +12,16 @@ export default function Produtos() {
     return (
         <>
             <Header />
-            <section className="hidden sm:flex w-auto h-auto gap-[6vw] pl-[6vw] pb-[18vh] pt-[6vw]">
-                <div className=" flex w-[18vw] h-[19vw] pt-[3vw] pl-[2vw] border rounded-lg bg-zinc-50 shadow-card">
+            <section className="flex items-start gap-[6vw] pl-[6vw] pb-[18vh] pt-[6vw]">
+                <div className=" flex w-[18vw] pt-[3vw] pl-[2vw] border rounded-lg bg-zinc-50 shadow-card pb-3">
                     <ul className="flex flex-col font-inter font-semibold text-px16 leading-19.36 gap-8">
-                        <li><NavLink style={navLinkStyle} to='/tenis'>Tênis</NavLink></li>
+                        <li>Tênis</li>
                         <li>Blusa</li>
                         <li>Acessórios</li>
                         <li>Calças</li>
                     </ul>
                 </div>
-                <div className=" grid grid-cols-4 mt-[26px]">
+                <div className=" flex flex-wrap mt-[26px] gap-4">
                     <div id="Card produto" className="flex-col w-[176px] h-[257px] shadow-card">
                         <img className="w-[176px] h-[134px]  rounded" src="src\assets\NiqueAirSurf.png" alt="Card do tênis Niquel Air surf" />
                         <p className="w-[138px] h-6 mt-[9px] text-blue-900 font-inter font-bold text-xl leading-24.2">Nique Air Surf</p>
