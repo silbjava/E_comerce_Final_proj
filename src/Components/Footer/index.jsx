@@ -1,8 +1,8 @@
 export function Footer() {
     return (
         <>
-            <div className=" hidden sm:flex flex-col bg-blue-900 w-screen pb-9 pt-12">
-                <section className="ml-[14.45vw] flex flex-wrap w-auto h-auto">
+            <div className=" hidden sl:flex flex-col bg-blue-900 w-screen pb-9 pt-12">
+                <section className="ml-[14.45vw] flex flex-wrap">
                     <div className="flex m-0 p-0 w-[292px] h-[76px]" >
                         <div className="flex flex-col justify-between">
                             <img id="logo" className="flex w-[81.8px] h-[32px] m-0 p-0" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
@@ -47,7 +47,7 @@ export function Footer() {
                 </section>
             </div>
 
-            <div className="sl:hidden flex flex-col bg-blue-900 pt-[25px] pb-4 h-auto ">
+            <div className="sl:hidden flex flex-col bg-blue-900 pt-[25px] pb-4 ">
                 <section className=" flex pl-6 flex-wrap">
                     <div className=" flex m-0 p-0 w-[292px] h-[76px]" >
                         <div className="flex flex-col">
