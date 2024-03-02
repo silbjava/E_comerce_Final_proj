@@ -11,9 +11,9 @@ export function Header() {
 
             <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-screen">
                 <div className="flex">
-                    <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] lg:mr-[18.83vw] sm:mr-[15%]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
+                    <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] lg:mr-[18.83vw] sm:mr-[15%]" src="./../src/assets/Logo E-rede.png" alt="Logo E-rede" />
                     <div className="flex relative items-center mt-[45px] mr-[4.44vw]">
-                        <img id="pesquisar" className=" absolute w-6 ml-3 pointer-events-none " src="src\assets\Procurar.svg" alt="icone de pesquisa" />
+                        <img id="pesquisar" className=" absolute w-6 ml-3 pointer-events-none " src="./../src/assets/Procurar.svg" alt="icone de pesquisa" />
                         <input className="h-11 w-[36.11vw] pl-11 text-stone-500 font-inter" type="serach" placeholder="Buscar" required />
                     </div>
 
@@ -25,7 +25,7 @@ export function Header() {
                             <Link to="/login">Entrar</Link>
                         </button>
                         <button className="w-6 h-6 pt-[7px]">
-                            <img id="carrinho" src="src\assets\Carrinho.svg" alt="icone carrinho de compras" />
+                            <img id="carrinho" src=".\..\src\assets\Carrinho.svg" alt="icone carrinho de compras" />
                         </button>
                     </div>
                 </div>

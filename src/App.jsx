@@ -7,6 +7,7 @@ import Login from "./Pages/Login"
 import Page404 from "./Pages/404"
 import Paginas from "./Components/Paginas"
 import Produtos from "./Pages/Produtos"
+import Detalhes from "./Pages/Detalhes"
 
 function App() {
 
@@ -19,7 +20,10 @@ function App() {
             <Route path="/cadastro" element={<Cadastro/>}/>
             <Route path="/categorias" element={<Categorias />} />
             <Route path="/meuspedidos" element={<MeusPedidos />} />
-            <Route path="produtos" element={<Produtos/>}/>
+            <Route path="/produtos" >
+              <Route index element={<Produtos/>}/>
+              <Route path=":detalhes" element={<Detalhes/>}/>
+            </Route>
             <Route path="*" element={<Page404 />} />
             <Route path="paginas" element={<Paginas/>}/>
           </Routes>
