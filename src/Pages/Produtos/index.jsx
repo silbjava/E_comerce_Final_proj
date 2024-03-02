@@ -1,39 +1,39 @@
 
 import { Footer } from "../../Components/Footer";
 import { Header } from "../../Components/Header";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 export default function Produtos() {
-    const navLinkStyle = ({ isActive }) => {
-        return (
-            isActive ? 'list-image-elipseCol' : 'list-image-elipse'
-        )
-    }
+    const [corLabel, setCorLabel] = useState(null)
+
     return (
         <>
             <Header />
             <section className="flex items-start gap-[6vw] pl-[6vw] pb-[18vh] pt-[6vw]">
                 <div className=" flex sm:w-[40vw] xl:w-[20vw] lg:w-[34vw] pt-[3vw] pl-[2vw] border rounded-lg bg-zinc-50 shadow-card pb-3">
                     <div className="flex flex-col font-inter font-semibold text-px16 leading-19.36 gap-8">
-                        <div className="flex gap-1">
-                            <input className=" accent-orange-500" type="radio" id="tênis" name="Produtos"  value="Tènis" checked />
+                        <div className="flex gap-1 text-orange-500">
+                            <input className=" accent-orange-500" type="radio" id="tênis" name="Produtos" value="Tènis" checked />
                             <label for="tênis">Tênis</label>
                         </div>
                         <div className="flex gap-1" >
-                            <input className=" accent-orange-500" type="radio" id="blusa" name="Produtos" value="Blusa" checked />
+                            <input className=" accent-orange-500" type="radio" id="blusa" name="Produtos" value="Blusa" />
                             <label for="blusa">Blusa</label>
                         </div>
                         <div className="flex gap-1">
-                            <input className=" accent-orange-500" type="radio" id="acessorios" name="Produtos" value="Acessórios" checked />
+                            <input className=" accent-orange-500" type="radio" id="acessorios" name="Produtos" value="Acessórios" />
                             <label for="acessorios">Acessórios</label>
                         </div>
                         <div className="flex gap-1">
-                            <input className=" accent-orange-500" type="radio" id="calças" name="Produtos" value="Calças" checked />
+                            <input className=" accent-orange-500" type="radio" id="calças" name="Produtos" value="Calças" />
                             <label for="calças">Calças</label>
                         </div>
                     </div>
                 </div>
-                <div className=" flex flex-wrap mt-[26px] gap-4">
+
+
+
+                <div id="card_tênis" className=" flex flex-wrap mt-[26px] gap-4">
                     <div id="Card produto" className="flex-col w-[176px] h-[257px] shadow-card">
                         <img className="w-[176px] h-[134px]  rounded" src="src\assets\NiqueAirSurf.png" alt="Card do tênis Niquel Air surf" />
                         <div className=" pl-3">
