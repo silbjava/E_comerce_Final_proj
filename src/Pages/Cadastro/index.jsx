@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Cadastro() {
 
@@ -15,7 +16,7 @@ export default function Cadastro() {
 
     return (
         <>
-            <section className="flex">
+            <section className=" hidden sm:flex">
                 <div className="flex flex-col w-1/2 h-screen bg-slate-100 items-center justify-center">
                     <div className="w-[34vw] h-[40vw] bg-white pl-[5vw] pt-[2vw]">
                         <h1 className=" font-inter font-semibold text-px30 leading-36.3 text-black">Cadastre-se</h1>
@@ -66,7 +67,7 @@ export default function Cadastro() {
                 <div className="flex flex-col w-[304px]  mt-7 pt-[14px] pb-10 bg-white items-center">
                     <h1 className="font-inter font-semibold text-px24 leading-normal text-black">Cadastre-se</h1>
                     <form className="flex flex-col items-center" onSubmit={aoCadastrar}>
-                        <div className="flex flex-col w-[260px] h-[70px] rounded-lg mb-5 gap-2">
+                        <div className="flex flex-col w-[260px] h-[70px] rounded-lg mb-5 mt-[4vh] gap-2">
                             <label className=" font-inter font-semibold text-px16 leading-19.36" >Nome:*</label>
                             <input className="h-[43px] font-inter font-medium text-px16 text-stone-500 leading-19.36 pl-3 items-center bg-slate-100 rounded-lg " type="text" placeholder="Digite seu nome" required
                                 value={cadastroState.nome}
@@ -90,7 +91,7 @@ export default function Cadastro() {
                         <button type="submit" className=" w-[260px] h-[60px] items-center justify-items-center rounded-lg bg-orange-500 font-inter font-semibold text-px16 leading-19.36 text-white"> Cadastrar</button>
                         <div className="flex font-inter text-px16 leading-19.36 gap-1 ">
                             <p className="text-stone-900">já possui cadastro? </p>
-                            <button className="text-orange-500">Clique aqui</button>
+                            <button className="text-orange-500"><Link to="/login">Clique aqui</Link></button>
                         </div>
                     </form>
                 </div>

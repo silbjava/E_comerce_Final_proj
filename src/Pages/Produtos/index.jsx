@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 export default function Produtos() {
     const navLinkStyle = ({isActive}) => {
         return(
-            isActive ? 'list-image-elipseCol' : 'list-image-elipse'
+            isActive ? 'list-image-elipseCol text-orange-500' : 'list-image-elipse'
         )
     }
     return (
@@ -14,9 +14,9 @@ export default function Produtos() {
             <Header />
             <section className="hidden sm:flex w-auto h-auto gap-[6vw] pl-[6vw] pb-[18vh] pt-[6vw]">
                 <div className=" flex w-[18vw] h-[19vw] pt-[3vw] pl-[2vw] border rounded-lg bg-zinc-50 shadow-card">
-                    <ul className="flex flex-col font-inter font-semibold text-px16 leading-19.36 gap-8">
-                        <li><NavLink style={navLinkStyle} to='/tenis'>Tênis</NavLink></li>
-                        <li>Blusa</li>
+                    <ul className=" list-image-elipse flex flex-col font-inter font-semibold text-px16 leading-19.36 gap-8">
+                        <li><a><NavLink className={navLinkStyle} >Tênis</NavLink></a></li>
+                        <li><NavLink className={navLinkStyle} >Blusa</NavLink></li>
                         <li>Acessórios</li>
                         <li>Calças</li>
                     </ul>
