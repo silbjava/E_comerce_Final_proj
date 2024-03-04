@@ -18,7 +18,8 @@ export default {
         xl: '1.25rem',
         px24: '1.5rem',
         px30: '1.875rem',
-        px32: '2rem'
+        px32: '2rem',
+        px40: '2.5rem',
       },
       lineHeight: {
         '14.5': '0.9075rem',
@@ -28,7 +29,8 @@ export default {
         '24.2': '1.5125rem',
         '29.05': '1.815625rem',
         '36.3': '2.26875rem',
-        '38.7': '2.41875rem',      
+        '38.7': '2.41875rem',
+        '48.4': '3.025625rem'      
       },
       boxShadow: {
         'card': '0 4px 4px 0px rgba(0, 0, 0, 0.25)',

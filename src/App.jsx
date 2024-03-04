@@ -8,6 +8,7 @@ import Page404 from "./Pages/404"
 import Paginas from "./Components/Paginas"
 import Produtos from "./Pages/Produtos"
 import Detalhes from "./Pages/Detalhes"
+import MeuCarrinho from "./Components/MeuCarrinho"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             </Route>
             <Route path="*" element={<Page404 />} />
             <Route path="paginas" element={<Paginas/>}/>
+            <Route path="carrinho" element={<MeuCarrinho/>}/>
           </Routes>
       </BrowserRouter>
 

@@ -14,8 +14,8 @@ export default function Cadastro() {
     }
     return (
         <>
-            <section className="hidden sd:flex">
-                <div className="flex flex-col w-1/2 h-screen bg-slate-100 items-center justify-center">
+            <section className="hidden sm:flex">
+                <div className="flex flex-col w-1/2 bg-slate-100 items-center justify-center">
                     <div className="w-[34vw] h-[40vw] bg-white pl-[5vw] pt-[2vw]">
                         <h1 className=" font-inter font-semibold text-px30 leading-36.3 text-black mb-[34px]">Fazer Login</h1>
                         <form onSubmit={aoLogar}>
