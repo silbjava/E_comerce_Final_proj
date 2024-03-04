@@ -78,7 +78,7 @@ export function Footer() {
                             <li><a href="Esportivo">Esportivo</a></li>
                         </ul>
                     </div>
-                    <div className=" flex  flex-col h-[59px] gap-3">
+                    <div className=" flex flex-col h-[59px] gap-3">
                         <label className="text-white font-inter font-semibold text-px12 leading-14.5 ">Localização</label>
                         <ul className="flex flex-col text-slate-50 font-inter text-px12 leading-14.5 gap-2">
                             <li>
