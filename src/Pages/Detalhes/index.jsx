@@ -3,7 +3,7 @@ import { Header } from "../../Components/Header";
 import { useState } from 'react';
 
 export default function Detalhes() {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState(1);
 
     const increment = () => {
         setValue(prevValue => prevValue + 1);
@@ -42,7 +42,7 @@ export default function Detalhes() {
                                 className=" font-inter font-semibold text-px16 sm:text-px24 leading-19.36 sm:leading-29.05 pl-5 pr-2 w-20 h-10 sm:w-24 sm:h-10 border border-black rounded  "
                                 value={value}
                                 onChange={e => setValue(e.target.value)}
-                                min={0}
+                                min={1}
                             />
                             <img className=" absolute top-2 right-[11px] " onClick={increment} src=".\..\src\assets\VectorUp.png" alt="vector down" />
                         </div>

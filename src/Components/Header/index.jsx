@@ -9,7 +9,7 @@ export function Header() {
     return (
         <>
 
-            <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-screen">
+            <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-screen relative">
                 <div className="flex">
                     <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] lg:mr-[18.83vw] sm:mr-[15%]" src="./../src/assets/Logo E-rede.png" alt="Logo E-rede" />
                     <div className="flex relative items-center mt-[45px] mr-[4.44vw]">
@@ -25,7 +25,9 @@ export function Header() {
                             <Link to="/login">Entrar</Link>
                         </button>
                         <button className="w-6 h-6 pt-[7px]">
+                            <Link to={"/carrinho"}>
                             <img id="carrinho" src=".\..\src\assets\Carrinho.svg" alt="icone carrinho de compras" />
+                            </Link>
                         </button>
                     </div>
                 </div>

@@ -51,11 +51,11 @@ export default function Cadastro() {
                     </div>
                 </div>
                 <div className="flex flex-col w-1/2 h-screen bg-blue-900 items-center justify-center">
-                    <p className="w-[389px] h-[78px] text-white font-inter text-px32 leading-38.7">
+                    <p className=" w-[30vw] flex-wrap text-white font-inter sm: text-lg md:text-2xl lg:text-px32 g:leading-38.7">
                         Sua nova experiência em
                         compras online
                     </p>
-                    <div className="flex w-[27vw] h-[11vw] mt-7">
+                    <div className="flex w-[27vw] h-[11vw] mt-5">
                         <img src="src\assets\Logo_cadastro.png" alt="Logo irede na tela cadastro" />
                     </div>
                 </div>

@@ -26,8 +26,8 @@ function App() {
               <Route path=":detalhes" element={<Detalhes/>}/>
             </Route>
             <Route path="*" element={<Page404 />} />
-            <Route path="paginas" element={<Paginas/>}/>
-            <Route path="carrinho" element={<MeuCarrinho/>}/>
+            <Route path="/paginas" element={<Paginas/>}/>
+            <Route path="/carrinho" element={<MeuCarrinho/>}/>
           </Routes>
       </BrowserRouter>
 
