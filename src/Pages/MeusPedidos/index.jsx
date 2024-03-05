@@ -1,23 +1,10 @@
-// import { useState } from "react";
 import { Footer } from "../../Components/Footer";
 import { Header } from "../../Components/Header";
 import { Link } from "react-router-dom";
-import { useState } from 'react';
-import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
-import { RiArrowDownSFill } from "react-icons/ri";
+
 
 
 export default function MeusPedidos() {
-    // const[corItemNav, setCorItemNav] = useState('text-orange-500')
-    const [value, setValue] = useState(0);
-
-    const increment = () => {
-        setValue(prevValue => prevValue + 1);
-    };
-
-    const decrement = () => {
-        setValue(prevValue => (prevValue > 0 ? prevValue - 1 : 0));
-    };
 
     return (
         <>
@@ -73,38 +60,7 @@ export default function MeusPedidos() {
                             <p className="font-inter font-semibold text-px12 leading-14.5 text-stone-500">Qtd: 01</p>
                         </div>
                     </div>
-                    <div className="relative w-32">
-                        <button
-                            className="absolute  top-5 left-[67px] "
-                            onClick={decrement}
-                        >
-                            <BiSolidDownArrow />
-                        </button>
-                        <input
-                            type="text"
-                            className="flex font-inter font-semibold text-px24 leading-29.05 pl-5 w-24 h-10 items-center border border-black rounded text-lg "
-                            value={value}
-                            onChange={e => setValue(e.target.value)}
-                        />
-                        <button
-                            className="absolute top-1 right-[45px] "
-                            onClick={increment}
-                        >
-                            <BiSolidUpArrow />
-                        </button>
-                        {/* <style>
-                            {`
-                            input[type='number']::-webkit-inner-spin-button {
-                                width: 30px;
-                                height: 50px;
-                                margin: 17px;
-                                padding: 5px;
-                                transform: rotate(90deg);
-                                filter: sepia(100%) hue-rotate(90deg);
-                                cursor: pointer;
-                            }`}
-                        </style> */}
-                    </div>
+                    
                     <div className="flex w-[78.79vw] items-center justify-between">
                         <span className="text-stone-500 font-inter font-normal text-px16 leading-19.36">Status</span>
                         <span className="text-green-700 font-inter font-normal text-px16 leading-19.36">Finalizado</span>
