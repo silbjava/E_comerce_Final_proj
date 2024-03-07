@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Paginas() {
     return (
         <>
-            <div className="absolute flex flex-col rounded-lg bg-zinc-50 pt-[22px] pl-[9vw] pb-[9vw] sm:hidden">
+            <div className="flex flex-col rounded-lg bg-zinc-50 pt-[22px] pl-[9vw] pb-[9vw] sm:hidden">
                 <h1 className=" font-inter font-semibold text-px16 leading-19.36 text-stone-900 pb-4">Páginas</h1>
                 <hr className="flex w-[78.79vw] border-default border-stone-900 items-center" />
                 <nav className=" flex flex-col font-inter font-semibold text-px12 leading-14.5 text-stone-500 bg-zinc-50 mb-[60px]">
@@ -21,9 +21,7 @@ export default function Paginas() {
                         <Link to="/login">Entrar</Link>
                     </button>
                 </div>
-
             </div>
-
         </>
     )
 }

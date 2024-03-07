@@ -5,12 +5,12 @@ import { useState } from 'react';
 export default function Detalhes() {
     const [value, setValue] = useState(1);
 
-    const increment = () => {
-        setValue(prevValue => prevValue + 1);
+    const increment = () => { 
+        setValue(prevValue => (prevValue < 10 ? prevValue + 1: prevValue) );
     };
 
     const decrement = () => {
-        setValue(prevValue => (prevValue > 0 ? prevValue - 1 : 0));
+        setValue(prevValue => (prevValue > 1 ? prevValue - 1 : 1));
     };
   
     return (
@@ -18,7 +18,7 @@ export default function Detalhes() {
             <Header />
             <section className="flex flex-col items-center sm:flex-row sm:items-start sm:pl-[18vw] pt-[9vw] pb-[12vw] sm:pr-[10vw] gap-[5vw]">
                 <div className="flex flex-col">
-                    <img className="w-[220px] h-[170px] sm:flex sm:w-[18vw] sm:h-[20vw]" src="./../src/assets/SmartWatch.png" alt="smartwatch" />
+                    <img className="w-[210px] h-[160px] sm:flex sm:w-[18vw] sm:h-[20vw]" src="./../src/assets/SmartWatch.png" alt="smartwatch" />
                     <p className="hidden sm:flex font-inter font-semibold text-px14 text-blue-900 leading-29.05 pt-1">Quantidade disponível</p>
                     <p className="hidden sm:flex font-inter font-medium sm:text-px20 text-stone-500 leading-29.05 pt-2">100 itens disponíveis</p>
                 </div>
@@ -33,7 +33,7 @@ export default function Detalhes() {
                         treinos com diversos recursos e ainda desfruta de um
                         design elegante e moderno com diversas pulseiras intercambiáveis. </p>
                     <div className="flex flex-col justify-start sm:flex-row pt-4 gap-6">
-                    <form className="flex justify-center gap-2 sm:justify-normal sm:gap-0 sm:flex-col sm:items-center">
+                    <form className="flex justify-center gap-2 sm:justify-normal sm:gap-0 sm:flex-col items-center">
                         <h2 className=" font-inter font-semibold text-px16 sm:text-px24 leading-19.36 sm:leading-29.05">Quantidade:</h2>
                         <div className=" relative">
                             <img className="absolute  top-6 left-[51px] sm:left-[67px] " onClick={decrement} src=".\..\src\assets\VectorDown.png" alt="vector down" />
@@ -42,7 +42,6 @@ export default function Detalhes() {
                                 className=" font-inter font-semibold text-px16 sm:text-px24 leading-19.36 sm:leading-29.05 pl-5 pr-2 w-20 h-10 sm:w-24 sm:h-10 border border-black rounded  "
                                 value={value}
                                 onChange={e => setValue(e.target.value)}
-                                min={1}
                             />
                             <img className=" absolute top-2 right-[11px] " onClick={increment} src=".\..\src\assets\VectorUp.png" alt="vector down" />
                         </div>

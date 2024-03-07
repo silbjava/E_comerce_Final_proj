@@ -16,7 +16,7 @@ export default function TelaHome() {
             <div className=" sm:hidden flex w-screen relative justify-center items-center ">
                 <img className="w-screen h-[auto]" src="src\assets\cardmobile.png" alt="Card tênis" />
                 
-                    <button className="absolute flex items-center justify-center w-[80vw] h-10 mt-[88vw] rounded-lg bg-orange-500 text-white font-inter text-px16 leading-19.36">
+                    <button className="absolute flex items-center justify-center w-[78vw] h-10 mt-[88vw] rounded-lg bg-orange-500 text-white font-inter text-px16 leading-19.36">
                         Aproveitar Oferta
                     </button>
             </div>

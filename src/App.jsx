@@ -30,7 +30,6 @@ function App() {
             <Route path="/carrinho" element={<MeuCarrinho/>}/>
           </Routes>
       </BrowserRouter>
-
     </>
   )
 }

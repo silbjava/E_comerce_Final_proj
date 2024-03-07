@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import Paginas from "../Paginas";
 
 export function Header() {
    const navLinkStyle = ({isActive}) =>{
@@ -8,26 +9,24 @@ export function Header() {
    }
     return (
         <>
-
             <div className="hidden sm:flex flex-col h-[174px] pb-[7px] bg-blue-900 w-screen relative">
                 <div className="flex">
-                    <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] lg:mr-[18.83vw] sm:mr-[15%]" src="./../src/assets/Logo E-rede.png" alt="Logo E-rede" />
+                    <img id="logo" className="w-[81.8px] h-8 mt-[54px] ml-[7.43vw] mr-[10vw] lg:mr-[13vw]" src="./../src/assets/Logo E-rede.png" alt="Logo E-rede" />
                     <div className="flex relative items-center mt-[45px] mr-[4.44vw]">
-                        <img id="pesquisar" className=" absolute w-6 ml-3 pointer-events-none " src="./../src/assets/Procurar.svg" alt="icone de pesquisa" />
+                        <img id="pesquisar" className=" absolute w-6 ml-3  pointer-events-none " src="./../src/assets/Procurar.svg" alt="icone de pesquisa" />
                         <input className="h-11 w-[36.11vw] pl-11 text-stone-500 font-inter" type="serach" placeholder="Buscar" required />
                     </div>
 
                     <div className=" flex gap-5 mt-[47px]">
-                        <button className="w-auto h-[19px] mt-[11px] items-center text-white font-inter text-base font-semibol">
+                        <button className=" h-[19px] mt-[11px] items-center text-white font-inter sm:text-xs md:text-base font-semibold">
                             <Link to="/cadastro">Cadastre-se</Link>
                         </button>
-                        <button className="w-[9vw] h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter text-base font-semibold  items-center" >
-                            <Link to="/login">Entrar</Link>
-                        </button>
+                        <Link to="/login">
+                        <button className="w-[9vw] h-10 rounded-lg bg-orange-500 text-zinc-50 font-inter sm:text-xs md:text-base  font-semibold  items-center" >
+                            Entrar
+                        </button></Link>
                         <button className="w-6 h-6 pt-[7px]">
-                            <Link to={"/carrinho"}>
                             <img id="carrinho" src=".\..\src\assets\Carrinho.svg" alt="icone carrinho de compras" />
-                            </Link>
                         </button>
                     </div>
                 </div>
@@ -52,7 +51,5 @@ export function Header() {
                 </div>
             </div>
         </>
-
-
     )
 }

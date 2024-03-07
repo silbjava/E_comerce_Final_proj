@@ -18,8 +18,8 @@ export default function Cadastro() {
         <>
             <section className=" hidden sm:flex">
                 <div className="flex flex-col w-1/2 h-screen bg-slate-100 items-center justify-center">
-                    <div className="w-[34vw] h-[40vw] bg-white pl-[5vw] pt-[2vw]">
-                        <h1 className=" font-inter font-semibold text-px30 leading-36.3 text-black">Cadastre-se</h1>
+                    <div className="w-[34vw] bg-white pl-[5vw] pt-[2vw] pb-3">
+                        <h1 className=" font-inter font-semibold sm:text-xl lg: text-2xl xl:text-px30 xl:leading-36.3 text-black">Cadastre-se</h1>
                         <form onSubmit={aoCadastrar}>
                             <div className="flex flex-col w-[26vw] h-[70px] rounded-lg mb-5 gap-2 mt-[2vw]">
                                 <label className=" font-inter font-semibold text-px16 leading-19.36" >Nome:*</label>
@@ -42,8 +42,8 @@ export default function Cadastro() {
                                     onChange={(e) => onChangeCadastro(e, 'password')}
                                 />
                             </div>
-                            <button type="submit" className="w-[26vw] h-[5vw] rounded-lg bg-orange-500 text-white flex items-center justify-center font-inter font-semibold text-px16 leading-19.36 text-whi"> Cadastrar</button>
-                            <div className="flex pl-[2vw] font-inter text-px16 leading-19.36 gap-1">
+                            <button type="submit" className="w-[24vw] h-[5vw] rounded-lg bg-orange-500 text-white flex items-center justify-center font-inter font-semibold sm:text-xs md:text-base lg:text-px16 leading-19.36 text-whi"> Cadastrar</button>
+                            <div className="flex md:justify-center font-inter sm:text-xs md:text-sm lg:text-px16 leading-19.36 gap-1">
                                 <p className="text-stone-900">já possui cadastro? </p>
                                 <button className="text-orange-500">Clique aqui</button>
                             </div>
