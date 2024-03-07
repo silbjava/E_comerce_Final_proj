@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Produtos() {
+
     const [color, setColor] = useState('black');
     const [activeDiv, setActiveDiv] = useState(null);
 
@@ -12,12 +13,11 @@ export default function Produtos() {
         setActiveDiv(div === activeDiv ? null : div);
     };
 
-
     return (
         <>
             <Header />
             <section className="flex flex-col items-center sm:flex-row sm:items-start gap-[6vw] pl-[6vw] pb-5 sm:pb-[18vh] pt-[6vw]">
-                <div className="hidden sm:flex bg-zinc-50 sm:w-[300px] pt-[3vw] pl-[2vw] border rounded-lg shadow-card pb-3">
+                <div className="hidden sm:flex bg-zinc-50 pt-[3vw] pr-3 pl-4 border rounded-lg shadow-card pb-3">
                     <div className="flex flex-col font-inter font-semibold text-px16 leading-19.36 sm:gap-4 md:gap-5 lg:gap-7">
 
                         <div className="flex gap-1">

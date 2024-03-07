@@ -11,7 +11,6 @@ export default function Cadastro() {
 
     const aoCadastrar = (e) => {
         e.preventDefault()
-        console.log(cadastroState)
     }
 
     return (
@@ -42,8 +41,8 @@ export default function Cadastro() {
                                     onChange={(e) => onChangeCadastro(e, 'password')}
                                 />
                             </div>
-                            <button type="submit" className="w-[24vw] h-[5vw] rounded-lg bg-orange-500 text-white flex items-center justify-center font-inter font-semibold sm:text-xs md:text-base lg:text-px16 leading-19.36 text-whi"> Cadastrar</button>
-                            <div className="flex md:justify-center font-inter sm:text-xs md:text-sm lg:text-px16 leading-19.36 gap-1">
+                            <button type="submit" className="w-[24vw] h-[5vw] rounded-lg bg-orange-500 text-white flex items-center justify-center font-inter font-semibold sm:text-xs md:text-base lg:text-px16 leading-19.36"> Cadastrar</button>
+                            <div className="flex md:pl-2 font-inter sm:text-xs md:text-sm lg:text-px16 leading-19.36 gap-1">
                                 <p className="text-stone-900">já possui cadastro? </p>
                                 <button className="text-orange-500">Clique aqui</button>
                             </div>
@@ -62,7 +61,7 @@ export default function Cadastro() {
 
             </section>
 
-            <section className="sl:hidden flex flex-col px-2 pb-[107px] w-screen bg-blue-900 items-center">
+            <section className="sm:hidden flex flex-col px-2 pb-[107px] w-screen bg-blue-900 items-center">
                 <img id="logo" className="w-[71.56px] h-7 mt-[33px]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
                 <div className="flex flex-col w-[304px]  mt-7 pt-[14px] pb-10 bg-white items-center">
                     <h1 className="font-inter font-semibold text-px24 leading-normal text-black">Cadastre-se</h1>

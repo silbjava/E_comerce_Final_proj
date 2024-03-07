@@ -16,7 +16,7 @@ export default function Cadastro() {
         <>
             <section className="hidden sm:flex">
                 <div className="flex flex-col w-1/2 bg-slate-100 items-center justify-center">
-                    <div className="w-[34vw] h-[40vw] bg-white pl-[5vw] pt-[2vw]">
+                    <div className="w-[34vw] bg-white pl-[5vw] pt-[2vw] pb-3">
                         <h1 className=" font-inter font-semibold text-px30 leading-36.3 text-black mb-[34px]">Fazer Login</h1>
                         <form onSubmit={aoLogar}>
                             <div className="flex flex-col w-[26vw] h-[70px] rounded-lg mb-5 gap-2">
@@ -53,7 +53,7 @@ export default function Cadastro() {
                 </div>
             </section>
 
-            <section className="sl:hidden flex flex-col px-2 pb-5 w-screen h-[568px] bg-blue-900 items-center">
+            <section className="sl:hidden flex flex-col px-2 pb-5 w-screen bg-blue-900 items-center">
                 <img id="logo" className="w-[71.56px] h-7 mt-[33px]" src="src\assets\Logo E-Rede.png" alt="Logo E-rede" />
                 <div className="flex flex-col w-[304px]  mt-7 pt-[14px] pb-10 bg-white items-center">
                     <h1 className="font-inter font-semibold text-px24 leading-normal text-black">Fazer Login</h1>
